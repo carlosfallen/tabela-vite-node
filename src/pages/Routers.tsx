@@ -9,7 +9,8 @@ export default function Routers() {
   const [routers, setRouters] = useState<Router[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [showPassword, setShowPassword] = useState<{ [key: number]: boolean }>({});
+  const [showPassword, setShowPassword] = useState<Record<number, { login?: boolean; wifi?: boolean }>>({});
+
   const [qrCodeData, setQrCodeData] = useState<{ ssid: string; password: string; hidden: boolean } | null>(null);
 
   useEffect(() => {
@@ -43,13 +44,16 @@ export default function Routers() {
     fetchRouters();
   }, [user]);
 
-  const togglePasswordVisibility = (routerId: number) => {
+  const togglePasswordVisibility = (routerId: number, field: 'login' | 'wifi') => {
     setShowPassword((prev) => ({
       ...prev,
-      [routerId]: !prev[routerId],
+      [routerId]: {
+        ...prev[routerId],
+        [field]: !(prev[routerId]?.[field] ?? false),
+      },
     }));
   };
-
+  
   const generateQrCode = (router: Router) => {
     const { wifi_ssid: ssid, wifi_password: password, hidden } = router;
     setQrCodeData({ ssid: ssid || '', password: password || '', hidden: hidden === 1 });
@@ -116,18 +120,18 @@ export default function Routers() {
                       </span>
                     </div>
                     <div className="flex items-center">
-                      <span className="text-sm font-medium">
-                        {showPassword[router.id]
-                          ? router.login_password || ''
-                          : (router.login_password || '').replace(/./g, '•')}
-                      </span>
-                      <button
-                        onClick={() => togglePasswordVisibility(router.id)}
-                        className="ml-2 text-gray-500 hover:text-gray-700"
-                      >
-                        {showPassword[router.id] ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
-                      </button>
-                    </div>
+  <span className="text-sm font-medium">
+    {showPassword[router.id]?.login
+      ? router.login_password || ''
+      : (router.login_password || '').replace(/./g, '•')}
+  </span>
+  <button
+    onClick={() => togglePasswordVisibility(router.id, 'login')}
+    className="ml-2 text-gray-500 hover:text-gray-700"
+  >
+    {showPassword[router.id]?.login ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+  </button>
+</div>
                   </div>
                 </div>
 
@@ -141,12 +145,18 @@ export default function Routers() {
                       </span>
                     </div>
                     <div className="flex items-center">
-                      <span className="text-sm font-medium">
-                        {showPassword[router.id]
-                          ? router.wifi_password || ''
-                          : (router.wifi_password || '').replace(/./g, '•')}
-                      </span>
-                    </div>
+  <span className="text-sm font-medium">
+    {showPassword[router.id]?.wifi
+      ? router.wifi_password || ''
+      : (router.wifi_password || '').replace(/./g, '•')}
+  </span>
+  <button
+    onClick={() => togglePasswordVisibility(router.id, 'wifi')}
+    className="ml-2 text-gray-500 hover:text-gray-700"
+  >
+    {showPassword[router.id]?.wifi ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+  </button>
+</div>
                   </div>
                 </div>
               </div>
