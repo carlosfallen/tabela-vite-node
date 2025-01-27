@@ -19,7 +19,7 @@ export default function Routers() {
 
         const response = await fetch('http://10.0.11.150:3000/api/printers', {
           headers: {
-            'Authorization': `Bearer ${user.token}`,
+            Authorization: `Bearer ${user.token}`,
             'Content-Type': 'application/json'
           }
         });
@@ -45,11 +45,14 @@ export default function Routers() {
     const newOnline = currentOnline === 1 ? 0 : 1; // Alterna entre 1 e 0
   
     try {
+      if (!user || !user.token) {
+        throw new Error('Authentication token is missing');
+      }
       // Envia a atualização para o servidor
       await fetch(`http://10.0.11.150:3000/api/printers/${printerId}/online`, {
         method: 'PATCH',
         headers: {
-          'Authorization': `Bearer ${user.token}`,
+          Authorization: `Bearer ${user.token}`,
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({ online: newOnline }),
@@ -72,7 +75,9 @@ export default function Routers() {
       </div>
     );
   }
-
+  if (error) {
+    return <div className="text-red-500 p-4">Error: {error}</div>;
+  }
   return (
     <div>
       <div className="mb-6">
