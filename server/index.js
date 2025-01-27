@@ -159,24 +159,42 @@ app.get('/api/routers', authenticateToken, async (req, res) => {
 // Printer routes
 app.get('/api/printers', authenticateToken, async (req, res) => {
   const result = await db.execute(`
-    SELECT d.*, p.model, p.status as printer_status
-    FROM devices d
-    JOIN printers p ON d.id = p.device_id
-    WHERE d.type = 'Impressora'
+      SELECT p.*, d.ip, d.sector, d.status, p.model, p.npat, p.li, p.lf, p.online
+      FROM printers p
+      JOIN Devices d ON p.device_id = d.id
   `);
   res.json(result.rows);
+});
+
+app.patch('/api/printers/:id/online', authenticateToken, async (req, res) => {
+  const { id } = req.params;
+  const { online } = req.body;
+
+  if (![0, 1].includes(online)) {
+    return res.status(400).json({ error: 'Invalid online value' });
+  }
+
+  try {
+    await db.execute(
+      `UPDATE Printers SET online = ? WHERE id = ?`,
+      [online, id]
+    );
+    res.status(200).json({ message: 'Printer online status updated successfully' });
+  } catch (error) {
+    console.error('Error updating printer online status:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
 });
 
 // Box routes
 app.get('/api/boxes', authenticateToken, async (req, res) => {
   try {
     const result = await db.execute(`
-      SELECT r.*, d.ip, d.name, d.status, r.power_status
-      FROM boxes r
-      JOIN Devices d ON r.device_id = d.id
+      SELECT b.*, d.ip, d.name, d.status, b.power_status
+      FROM boxes b
+      JOIN Devices d ON b.device_id = d.id
     `);
     res.json(result.rows);
-    console.log(result.rows);
   } catch (error) {
     console.error('Error fetching boxes:', error);
     res.status(500).json({ error: 'Failed to fetch boxes' });

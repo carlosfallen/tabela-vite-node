@@ -21,7 +21,7 @@ function Layout() {
       <div className="md:hidden bg-white w-full fixed top-0 z-50">
         <div className="px-4 py-3 border-b border-gray-200">
           <div className="flex items-center justify-between">
-            <h1 className="text-lg font-semibold">Device Manager</h1>
+            <h1 className="text-lg font-semibold">Gerenciador</h1>
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="text-gray-500 hover:text-gray-900 focus:outline-none"

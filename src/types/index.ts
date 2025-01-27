@@ -20,7 +20,10 @@ export interface Router extends Device {
 }
 
 export interface Printer extends Device {
+  online: number;
+  device_id: number;
   model: string;
+  npat: number;
   status: DeviceStatus; 
 }
 

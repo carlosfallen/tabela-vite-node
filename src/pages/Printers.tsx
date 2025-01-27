@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import type { Printer } from '../types';
-import { Activity, Power, RefreshCw, Printer as PrinterIcon } from 'lucide-react';
+import { Activity, Power, Printer as PrinterIcon } from 'lucide-react';
 import { useAuthStore } from '../store/auth'; // Import auth store
+import { Switch } from '../components/ui/switch'; // Supondo que você tenha um componente de switch
 
 export default function Routers() {
   const { user } = useAuthStore(); // Get user from auth store
@@ -12,7 +13,6 @@ export default function Routers() {
   useEffect(() => {
     const fetchPrinters = async () => {
       try {
-        // Ensure token is available
         if (!user || !user.token) {
           throw new Error('Authentication token is missing');
         }
@@ -25,14 +25,13 @@ export default function Routers() {
         });
 
         if (!response.ok) {
-          throw new Error('Failed to fetch routers');
+          throw new Error('Failed to fetch printers');
         }
 
         const data: Printer[] = await response.json();
-        // Ensure data is an array
         setPrinters(Array.isArray(data) ? data : []);
       } catch (error) {
-        console.error('Fetch routers error:', error);
+        console.error('Fetch printers error:', error);
         setError(error instanceof Error ? error.message : 'An unknown error occurred');
       } finally {
         setIsLoading(false);
@@ -42,14 +41,30 @@ export default function Routers() {
     fetchPrinters();
   }, [user]);
 
-  if (error) {
-    return (
-      <div className="text-red-500 p-4">
-        Error: {error}
-      </div>
-    );
-  }
-
+  const handlePrinterOnlineChange = async (printerId: number, currentOnline: number) => {
+    const newOnline = currentOnline === 1 ? 0 : 1; // Alterna entre 1 e 0
+  
+    try {
+      // Envia a atualização para o servidor
+      await fetch(`http://10.0.11.150:3000/api/printers/${printerId}/online`, {
+        method: 'PATCH',
+        headers: {
+          'Authorization': `Bearer ${user.token}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ online: newOnline }),
+      });
+  
+      // Atualiza o estado local após sucesso
+      setPrinters((prevPrinters) =>
+        prevPrinters.map((printer) =>
+          printer.id === printerId ? { ...printer, online: newOnline } : printer
+        )
+      );
+    } catch (error) {
+      console.error('Error updating printer online status:', error);
+    }
+  };
   if (isLoading) {
     return (
       <div className="flex items-center justify-center h-64">
@@ -58,9 +73,6 @@ export default function Routers() {
     );
   }
 
-  // Ensure routers is always an array
-  const safePrinters = Array.isArray(printers) ? printers : [];
-
   return (
     <div>
       <div className="mb-6">
@@ -68,7 +80,7 @@ export default function Routers() {
       </div>
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-      {safePrinters.map((printer) => (
+        {printers.map((printer) => (
           <div
             key={printer.id}
             className="bg-white rounded-lg shadow overflow-hidden"
@@ -76,7 +88,7 @@ export default function Routers() {
             <div className="p-6">
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-lg font-medium text-gray-900">
-                  {printer.name}
+                  {printer.sector}
                 </h3>
                 <span
                   className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
@@ -90,7 +102,6 @@ export default function Routers() {
                   ) : (
                     <Power className="w-3 h-3 mr-1" />
                   )}
-                  {printer.status}
                 </span>
               </div>
 
@@ -109,16 +120,16 @@ export default function Routers() {
                 </div>
 
                 <div>
-                  <p className="text-sm text-gray-500">Status</p>
-                  <p className="mt-1 text-sm font-medium">{printer.status}</p>
+                  <p className="text-sm text-gray-500">N.PAT</p>
+                  <p className="mt-1 text-sm font-medium">{printer.npat}</p>
                 </div>
               </div>
 
               <div className="mt-6">
-                <button className="w-full inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                  <RefreshCw className="w-4 h-4 mr-2" />
-                  Ping Printer
-                </button>
+              <Switch
+          checked={printer.online === 1} // Estado do switch baseado na variável online
+          onCheckedChange={() => handlePrinterOnlineChange(printer.id, printer.online)}
+        />
               </div>
             </div>
           </div>
