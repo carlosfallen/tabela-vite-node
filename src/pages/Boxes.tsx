@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
+import { Monitor } from 'lucide-react';
+import { Switch } from '../components/ui/switch'; // Certifique-se de usar o Switch correto
 import type { Box } from '../types';
-import { Activity, Power, RefreshCw } from 'lucide-react';
 import { useAuthStore } from '../store/auth';
 
 export default function Boxes() {
@@ -18,9 +19,9 @@ export default function Boxes() {
 
         const response = await fetch('http://10.0.11.150:3000/api/boxes', {
           headers: {
-            'Authorization': `Bearer ${user.token}`,
-            'Content-Type': 'application/json'
-          }
+            Authorization: `Bearer ${user.token}`,
+            'Content-Type': 'application/json',
+          },
         });
 
         if (!response.ok) {
@@ -40,41 +41,39 @@ export default function Boxes() {
     fetchBoxes();
   }, [user]);
 
-  const togglePower = async (id: number, currentStatus: 'on' | 'off') => {
-    
+  const togglePowerStatus = async (device_id: number, newPowerStatus: 0 | 1) => {
     try {
       if (!user || !user.token) {
         throw new Error('Authentication token is missing');
       }
 
-      const response = await fetch(`http://10.0.11.150:3000/api/boxes/${id}/power`, {
+      const response = await fetch(`http://10.0.11.150:3000/api/boxes/${device_id}/power-status`, {
         method: 'POST',
         headers: {
-          'Authorization': `Bearer ${user.token}`,
-          'Content-Type': 'application/json'
+          Authorization: `Bearer ${user.token}`,
+          'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ status: currentStatus === 'on' ? 'off' : 'on' }),
+        body: JSON.stringify({ power_status: newPowerStatus }),
       });
 
       if (!response.ok) {
-        throw new Error('Failed to toggle box power');
+        throw new Error('Failed to update box power status');
       }
 
-      const updatedBox = await response.json();
       setBoxes((prev) =>
-        prev.map((box) => (box.id === id ? updatedBox : box))
+        prev.map((box) =>
+          box.device_id === device_id
+            ? { ...box, power_status: newPowerStatus } // Atualiza apenas o power_status
+            : box
+        )
       );
     } catch (error) {
-      console.error('Failed to toggle box power:', error);
+      console.error('Failed to update box power status:', error);
     }
   };
 
   if (error) {
-    return (
-      <div className="text-red-500 p-4">
-        Error: {error}
-      </div>
-    );
+    return <div className="text-red-500 p-4">Error: {error}</div>;
   }
 
   if (isLoading) {
@@ -91,76 +90,37 @@ export default function Boxes() {
         <h1 className="text-2xl font-semibold text-gray-900">Caixas</h1>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <ul className="divide-y divide-gray-200">
         {boxes.map((box) => (
-          <div
-            key={box.id}
-            className="bg-white rounded-lg shadow overflow-hidden"
+          <li
+            key={box.device_id}
+            className="flex items-center justify-between py-4 px-6 bg-white rounded-lg shadow mb-4"
           >
-            <div className="p-6">
-              <div className="flex items-center justify-between mb-4">
+            <div className="flex items-center">
+              <Monitor className="w-6 h-6 text-gray-500 mr-4" />
+              <div>
                 <h3 className="text-lg font-medium text-gray-900">{box.name}</h3>
-                <span
-                  className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
-                    box.status === 1
-                      ? 'bg-green-100 text-green-800'
-                      : 'bg-red-100 text-red-800'
-                  }`}
-                >
-                  {box.status === 1 ? (
-                    <Activity className="w-3 h-3 mr-1" />
-                  ) : (
-                    <Power className="w-3 h-3 mr-1" />
-                  )}
-                  {box.status}
-                </span>
-              </div>
-
-              <div className="space-y-4">
-                <div>
-                  <p className="text-sm text-gray-500">IP Address</p>
-                  <p className="mt-1 text-sm font-medium">{box.ip}</p>
-                </div>
-
-                <div>
-                  <p className="text-sm text-gray-500">Power Status</p>
-                  <div className="mt-1 flex items-center">
-                    <Power
-                      className={`w-4 h-4 mr-2 ${
-                        box.powerStatus === 'on'
-                          ? 'text-green-500'
-                          : 'text-gray-400'
-                      }`}
-                    />
-                    <span className="text-sm font-medium capitalize">
-                      {box.powerStatus}
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-6 space-y-3">
-                <button
-                  onClick={() => togglePower(box.id, box.powerStatus)}
-                  className={`w-full inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md ${
-                    box.powerStatus === 'on'
-                      ? 'text-red-700 bg-red-100 hover:bg-red-200'
-                      : 'text-green-700 bg-green-100 hover:bg-green-200'
-                  } focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500`}
-                >
-                  <Power className="w-4 h-4 mr-2" />
-                  {box.powerStatus === 'on' ? 'Turn Off' : 'Turn On'}
-                </button>
-
-                <button className="w-full inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus -200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                  <RefreshCw className="w-4 h-4 mr-2" />
-                  Ping Box
-                </button>
+                <p className="text-sm text-gray-500">{box.ip}</p>
               </div>
             </div>
-          </div>
+            <div className="flex items-center space-x-4">
+              <span
+                className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium capitalize ${
+                  box.status === 1
+                    ? 'bg-green-100 text-green-800'
+                    : 'bg-red-100 text-red-800'
+                }`}
+              >
+                {box.status === 1 ? 'Ativo' : 'Inativo'}
+              </span>
+              <Switch
+                checked={box.power_status === 1}
+                onCheckedChange={(checked) => togglePowerStatus(box.device_id, checked ? 1 : 0)}
+              />
+            </div>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 }

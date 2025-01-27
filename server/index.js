@@ -169,38 +169,62 @@ app.get('/api/printers', authenticateToken, async (req, res) => {
 
 // Box routes
 app.get('/api/boxes', authenticateToken, async (req, res) => {
-  const result = await db.execute(`
-    SELECT d.*, b.power_status
-    FROM devices d
-    JOIN boxes b ON d.id = b.device_id
-    WHERE d.sector = 'Caixas'
-  `);
-  res.json(result.rows);
+  try {
+    const result = await db.execute(`
+      SELECT r.*, d.ip, d.name, d.status, r.power_status
+      FROM boxes r
+      JOIN Devices d ON r.device_id = d.id
+    `);
+    res.json(result.rows);
+    console.log(result.rows);
+  } catch (error) {
+    console.error('Error fetching boxes:', error);
+    res.status(500).json({ error: 'Failed to fetch boxes' });
+  }
 });
 
-app.post('/api/boxes/:id/power', authenticateToken, async (req, res) => {
+app.post('/api/boxes/:id/power-status', authenticateToken, async (req, res) => {
   const { id } = req.params;
-  const { status } = req.body;
+  const { power_status } = req.body;
 
-  if (!['on', 'off'].includes(status)) {
-    return res.status(400).json({ error: 'Invalid power status' });
+  // Valida o power_status
+  if (![1, 0].includes(power_status)) {
+    return res.status(400).json({ error: 'Invalid power status. Must be 1 or 0.' });
   }
 
-  await db.execute({
-    sql: 'UPDATE boxes SET power_status = ? WHERE device_id = ?',
-    args: [status, id]
-  });
+  try {
+    // Atualiza a coluna power_status na tabela boxes
+    const updateResult = await db.execute({
+      sql: 'UPDATE boxes SET power_status = ? WHERE device_id = ?',
+      args: [power_status, id],
+    });
 
-  const result = await db.execute({
-    sql: `
-      SELECT d.*, b.power_status
-      FROM devices d
-      JOIN boxes b ON d.id = b.device_id
-      WHERE d.id = ?
-    `,
-    args: [id]
-  });
-  res.json(result.rows[0]);
+    // Verifica se alguma linha foi afetada
+    if (updateResult.rowsAffected === 0) {
+      return res.status(404).json({ error: 'Box not found or no change made.' });
+    }
+
+    // Busca os dados atualizados
+    const result = await db.execute({
+      sql: `
+        SELECT r.*, d.ip, d.name, d.status, r.power_status
+        FROM boxes r
+        JOIN Devices d ON r.device_id = d.id
+        WHERE r.device_id = ?
+      `,
+      args: [id],
+    });
+
+    if (result.rows.length === 0) {
+      return res.status(404).json({ error: 'Box not found after update.' });
+    }
+
+    // Retorna os dados atualizados
+    res.json(result.rows[0]);
+  } catch (error) {
+    console.error('Error updating box power status:', error);
+    res.status(500).json({ error: 'Failed to update box power status.' });
+  }
 });
 
 // Automatic ping service
@@ -212,7 +236,6 @@ const pingAllDevices = async () => {
     try {
       const pingResult = await ping.promise.probe(device.ip);
       const status = pingResult.alive ? 1 : 0;
-      
       if (status !== device.status) {
         await db.execute({
           sql: 'UPDATE devices SET status = ? WHERE id = ?',

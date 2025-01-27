@@ -119,19 +119,19 @@ export default function Routers() {
                         {router.login_username || 'Usuário não disponível'}
                       </span>
                     </div>
-                    <div className="flex items-center">
-  <span className="text-sm font-medium">
-    {showPassword[router.id]?.login
-      ? router.login_password || ''
-      : (router.login_password || '').replace(/./g, '•')}
-  </span>
-  <button
-    onClick={() => togglePasswordVisibility(router.id, 'login')}
-    className="ml-2 text-gray-500 hover:text-gray-700"
-  >
-    {showPassword[router.id]?.login ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
-  </button>
-</div>
+                    <div className="flex">
+                      <button
+                        onClick={() => togglePasswordVisibility(router.id, 'login')}
+                        className="w-4 h-4 mr-2 text-gray-500 hover:text-gray-700"
+                      >
+                        {showPassword[router.id]?.login ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+                      </button>
+                      <span className="text-sm font-medium">
+                        {showPassword[router.id]?.login
+                          ? router.login_password || ''
+                          : (router.login_password || '').replace(/./g, '•')}
+                      </span>
+                    </div>
                   </div>
                 </div>
 
@@ -145,18 +145,18 @@ export default function Routers() {
                       </span>
                     </div>
                     <div className="flex items-center">
-  <span className="text-sm font-medium">
-    {showPassword[router.id]?.wifi
-      ? router.wifi_password || ''
-      : (router.wifi_password || '').replace(/./g, '•')}
-  </span>
-  <button
-    onClick={() => togglePasswordVisibility(router.id, 'wifi')}
-    className="ml-2 text-gray-500 hover:text-gray-700"
-  >
-    {showPassword[router.id]?.wifi ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
-  </button>
-</div>
+                      <button
+                        onClick={() => togglePasswordVisibility(router.id, 'wifi')}
+                        className="w-4 h-4 mr-2 text-gray-500 hover:text-gray-700"
+                      >
+                        {showPassword[router.id]?.wifi ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+                      </button>
+                      <span className="text-sm font-medium">
+                        {showPassword[router.id]?.wifi
+                          ? router.wifi_password || ''
+                          : (router.wifi_password || '').replace(/./g, '•')}
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>

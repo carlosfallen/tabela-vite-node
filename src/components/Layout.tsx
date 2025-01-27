@@ -76,7 +76,7 @@ function Layout() {
       <div className="hidden md:flex md:w-64 md:flex-col fixed h-screen bg-white border-r border-gray-200">
         <div className="flex flex-col flex-grow pt-5 overflow-y-auto">
           <div className="flex items-center flex-shrink-0 px-4">
-            <h1 className="text-xl font-semibold">Device Manager</h1>
+            <h1 className="text-xl font-semibold">Gerenciador</h1>
           </div>
           <div className="mt-5 flex-grow flex flex-col">
             <nav className="flex-1 px-2 space-y-1">

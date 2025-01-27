@@ -25,7 +25,10 @@ export interface Printer extends Device {
 }
 
 export interface Box extends Device {
-  powerStatus: 'on' | 'off';
+  power_status: number;
+  device_id: number;
+  ip: string;
+  name: string;
 }
 
 export interface User {
