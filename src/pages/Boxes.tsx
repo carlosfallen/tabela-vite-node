@@ -113,6 +113,9 @@ export default function Boxes() {
               >
                 {box.status === 1 ? 'Ativo' : 'Inativo'}
               </span>
+              <span className="text-sm text-gray-500">
+                  {box.power_status === 1 ? 'Conluido' : 'Pendente'}
+                </span>
               <Switch
                 checked={box.power_status === 1}
                 onCheckedChange={(checked) => togglePowerStatus(box.device_id, checked ? 1 : 0)}

@@ -1,73 +1,88 @@
 import { useEffect, useState } from 'react';
 import type { Printer } from '../types';
 import { Activity, Power, Printer as PrinterIcon } from 'lucide-react';
-import { useAuthStore } from '../store/auth'; // Import auth store
-import { Switch } from '../components/ui/switch'; // Supondo que você tenha um componente de switch
+import { useAuthStore } from '../store/auth';
+import { Switch } from '../components/ui/switch';
 
-export default function Routers() {
-  const { user } = useAuthStore(); // Get user from auth store
+export default function Printers() {
+  const { user } = useAuthStore();
   const [printers, setPrinters] = useState<Printer[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [updatingPrinters, setUpdatingPrinters] = useState<Set<number>>(new Set());
+
+  const fetchPrinters = async () => {
+    try {
+      if (!user?.token) {
+        throw new Error('Authentication token is missing');
+      }
+
+      const response = await fetch('http://10.0.11.150:3000/api/printers', {
+        headers: {
+          Authorization: `Bearer ${user.token}`,
+          'Content-Type': 'application/json'
+        }
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to fetch printers');
+      }
+
+      const data: Printer[] = await response.json();
+      setPrinters(Array.isArray(data) ? data : []);
+    } catch (error) {
+      console.error('Fetch printers error:', error);
+      setError(error instanceof Error ? error.message : 'An unknown error occurred');
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
   useEffect(() => {
-    const fetchPrinters = async () => {
-      try {
-        if (!user || !user.token) {
-          throw new Error('Authentication token is missing');
-        }
-
-        const response = await fetch('http://10.0.11.150:3000/api/printers', {
-          headers: {
-            Authorization: `Bearer ${user.token}`,
-            'Content-Type': 'application/json'
-          }
-        });
-
-        if (!response.ok) {
-          throw new Error('Failed to fetch printers');
-        }
-
-        const data: Printer[] = await response.json();
-        setPrinters(Array.isArray(data) ? data : []);
-      } catch (error) {
-        console.error('Fetch printers error:', error);
-        setError(error instanceof Error ? error.message : 'An unknown error occurred');
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
     fetchPrinters();
   }, [user]);
 
   const handlePrinterOnlineChange = async (printerId: number, currentOnline: number) => {
-    const newOnline = currentOnline === 1 ? 0 : 1; // Alterna entre 1 e 0
+    if (updatingPrinters.has(printerId)) return;
+  
+    setUpdatingPrinters(prev => new Set(prev).add(printerId));
   
     try {
-      if (!user || !user.token) {
+      if (!user?.token) {
         throw new Error('Authentication token is missing');
       }
-      // Envia a atualização para o servidor
-      await fetch(`http://10.0.11.150:3000/api/printers/${printerId}/online`, {
-        method: 'PATCH',
+  
+      const response = await fetch(`http://10.0.11.150:3000/api/printers/${printerId}/online`, {
+        method: 'POST',
         headers: {
           Authorization: `Bearer ${user.token}`,
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ online: newOnline }),
+        body: JSON.stringify({ online: currentOnline }),
       });
   
-      // Atualiza o estado local após sucesso
-      setPrinters((prevPrinters) =>
-        prevPrinters.map((printer) =>
-          printer.id === printerId ? { ...printer, online: newOnline } : printer
+      if (!response.ok) {
+        throw new Error('Failed to update printer status');
+      }
+  
+      // Atualiza o estado local diretamente após a confirmação da atualização
+      setPrinters(prevPrinters =>
+        prevPrinters.map(printer =>
+          printer.id === printerId ? { ...printer, online: currentOnline } : printer
         )
       );
+  
     } catch (error) {
       console.error('Error updating printer online status:', error);
+    } finally {
+      setUpdatingPrinters(prev => {
+        const next = new Set(prev);
+        next.delete(printerId);
+        return next;
+      });
     }
   };
+  
   if (isLoading) {
     return (
       <div className="flex items-center justify-center h-64">
@@ -75,9 +90,15 @@ export default function Routers() {
       </div>
     );
   }
+
   if (error) {
-    return <div className="text-red-500 p-4">Error: {error}</div>;
+    return (
+      <div className="bg-red-50 border border-red-200 rounded-lg p-4 text-red-600">
+        Error: {error}
+      </div>
+    );
   }
+
   return (
     <div>
       <div className="mb-6">
@@ -107,6 +128,7 @@ export default function Routers() {
                   ) : (
                     <Power className="w-3 h-3 mr-1" />
                   )}
+                  {printer.status === 1 ? 'Online' : 'Offline'}
                 </span>
               </div>
 
@@ -130,11 +152,14 @@ export default function Routers() {
                 </div>
               </div>
 
-              <div className="mt-6">
-              <Switch
-          checked={printer.online === 1} // Estado do switch baseado na variável online
-          onCheckedChange={() => handlePrinterOnlineChange(printer.id, printer.online)}
-        />
+              <div className="mt-6 flex items-center justify-between">
+                <span className="text-sm text-gray-500">
+                  {printer.online === 1 ? 'Conluido' : 'Pendente'}
+                </span>
+                <Switch
+                  checked={printer.online === 1}
+                  onCheckedChange={(checked) => handlePrinterOnlineChange(printer.id, checked ? 1 : 0)}
+                />
               </div>
             </div>
           </div>

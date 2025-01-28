@@ -103,7 +103,7 @@ app.get('/api/devices', authenticateToken, async (req, res) => {
   res.json(result.rows);
 });
 
-app.post('/api/devices/:id/ping', authenticateToken, async (req, res) => {
+/* app.post('/api/devices/:id/ping', authenticateToken, async (req, res) => {
   const { id } = req.params;
   const result = await db.execute({
     sql: 'SELECT * FROM devices WHERE id = ?',
@@ -136,7 +136,7 @@ app.post('/api/devices/:id/ping', authenticateToken, async (req, res) => {
     res.status(500).json({ error: 'Failed to ping device' });
   }
 });
-
+ */
 app.get('/api/routers', authenticateToken, async (req, res) => {
   try {
     const result = await db.execute(`
@@ -144,9 +144,6 @@ app.get('/api/routers', authenticateToken, async (req, res) => {
       FROM Routers r
       JOIN Devices d ON r.device_id = d.id
     `);
-
-    // Verifique o resultado no console
-    console.log(result.rows);
 
     // Retorne o resultado como JSON
     res.json(result.rows);
@@ -166,25 +163,35 @@ app.get('/api/printers', authenticateToken, async (req, res) => {
   res.json(result.rows);
 });
 
-app.patch('/api/printers/:id/online', authenticateToken, async (req, res) => {
+app.post('/api/printers/:id/online', authenticateToken, async (req, res) => {
   const { id } = req.params;
   const { online } = req.body;
 
-  if (![0, 1].includes(online)) {
-    return res.status(400).json({ error: 'Invalid online value' });
+  // Validação do status
+  if (![1, 0].includes(online)) {
+    return res.status(400).json({ error: 'Invalid online status. Must be 1 or 0.' });
   }
 
   try {
-    await db.execute(
-      `UPDATE Printers SET online = ? WHERE id = ?`,
-      [online, id]
-    );
+    // Atualiza o status na tabela devices
+    const updateResult = await db.execute({
+      sql: 'UPDATE printers SET online = ? WHERE id = ?',
+      args: [online, id]
+    });
+
+    // Verifica se alguma linha foi afetada
+    if (updateResult.rowsAffected === 0) {
+      return res.status(404).json({ error: 'Printer not found or no change made.' });
+    }
+
+    // Retorna uma resposta de sucesso
     res.status(200).json({ message: 'Printer online status updated successfully' });
   } catch (error) {
     console.error('Error updating printer online status:', error);
-    res.status(500).json({ error: 'Internal server error' });
+    res.status(500).json({ error: 'Failed to update printer online status.' });
   }
 });
+
 
 // Box routes
 app.get('/api/boxes', authenticateToken, async (req, res) => {
