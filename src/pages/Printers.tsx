@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import type { Printer } from '../types';
-import { Activity, Power, Printer as PrinterIcon } from 'lucide-react';
+import { Activity, Power, Printer as PrinterIcon, CheckCircle2, Clock, RefreshCcw } from 'lucide-react';
 import { useAuthStore } from '../store/auth';
 import { Switch } from '../components/ui/switch';
 
@@ -65,7 +65,6 @@ export default function Printers() {
         throw new Error('Failed to update printer status');
       }
   
-      // Atualiza o estado local diretamente após a confirmação da atualização
       setPrinters(prevPrinters =>
         prevPrinters.map(printer =>
           printer.id === printerId ? { ...printer, online: currentOnline } : printer
@@ -82,7 +81,7 @@ export default function Printers() {
       });
     }
   };
-  
+
   if (isLoading) {
     return (
       <div className="flex items-center justify-center h-64">
@@ -93,7 +92,7 @@ export default function Printers() {
 
   if (error) {
     return (
-      <div className="bg-red-50 border border-red-200 rounded-lg p-4 text-red-600">
+      <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4 text-red-600 dark:text-red-400">
         Error: {error}
       </div>
     );
@@ -102,25 +101,47 @@ export default function Printers() {
   return (
     <div>
       <div className="mb-6">
-        <h1 className="text-2xl font-semibold text-gray-900">Impressoras</h1>
+        <h1 className="text-2xl font-semibold">Impressoras</h1>
+        <div className="flex gap-4 mt-2">
+          <div className="flex items-center gap-2">
+            <div className="w-3 h-3 bg-green-100 dark:bg-green-800 rounded-full"></div>
+            <span className="text-sm text-gray-600 dark:text-gray-400">Concluídas</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-3 h-3 bg-gray-100 dark:bg-gray-700 rounded-full"></div>
+            <span className="text-sm text-gray-600 dark:text-gray-400">Pendentes</span>
+          </div>
+        </div>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {printers.map((printer) => (
           <div
             key={printer.id}
-            className="bg-white rounded-lg shadow overflow-hidden"
+            className={`
+              relative overflow-hidden rounded-2xl transition-all duration-200
+              ${printer.online === 1 
+                ? 'bg-green-50 dark:bg-green-800/20 border-2 border-green-200 dark:border-green-800' 
+                : 'bg-gray-50 dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700'}
+            `}
           >
+            {updatingPrinters.has(printer.id) && (
+              <div className="absolute inset-0 bg-black/5 dark:bg-white/5 flex items-center justify-center">
+                <RefreshCcw className="w-6 h-6 animate-spin text-indigo-600 dark:text-indigo-400" />
+              </div>
+            )}
+            
             <div className="p-6">
               <div className="flex items-center justify-between mb-4">
-                <h3 className="text-lg font-medium text-gray-900">
-                  {printer.sector}
-                </h3>
+                <div className="flex items-center gap-2">
+                  <PrinterIcon className={`w-5 h-5 ${printer.online === 1 ? 'text-green-600 dark:text-green-400' : 'text-gray-600 dark:text-gray-400'}`} />
+                  <h3 className="text-lg font-medium">{printer.sector}</h3>
+                </div>
                 <span
                   className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
                     printer.status === 1
-                      ? 'bg-green-100 text-green-800'
-                      : 'bg-red-100 text-red-800'
+                      ? 'bg-green-100 text-green-800 dark:bg-green-800 dark:text-green-100'
+                      : 'bg-red-100 text-red-800 dark:bg-red-800 dark:text-red-100'
                   }`}
                 >
                   {printer.status === 1 ? (
@@ -132,30 +153,37 @@ export default function Printers() {
                 </span>
               </div>
 
-              <div className="space-y-4">
-                <div>
-                  <p className="text-sm text-gray-500">IP Address</p>
-                  <p className="mt-1 text-sm font-medium">{printer.ip}</p>
+              <div className="space-y-3">
+                <div className="flex items-center justify-between px-3 py-2 bg-white/50 dark:bg-black/20 rounded-lg">
+                  <span className="text-sm text-gray-600 dark:text-gray-400">IP Address</span>
+                  <span className="text-sm font-medium">{printer.ip}</span>
                 </div>
 
-                <div>
-                  <p className="text-sm text-gray-500">Model</p>
-                  <div className="mt-1 flex items-center">
-                    <PrinterIcon className="w-4 h-4 mr-2 text-gray-400" />
-                    <span className="text-sm font-medium">{printer.model}</span>
-                  </div>
+                <div className="flex items-center justify-between px-3 py-2 bg-white/50 dark:bg-black/20 rounded-lg">
+                  <span className="text-sm text-gray-600 dark:text-gray-400">Model</span>
+                  <span className="text-sm font-medium">{printer.model}</span>
                 </div>
 
-                <div>
-                  <p className="text-sm text-gray-500">N.PAT</p>
-                  <p className="mt-1 text-sm font-medium">{printer.npat}</p>
+                <div className="flex items-center justify-between px-3 py-2 bg-white/50 dark:bg-black/20 rounded-lg">
+                  <span className="text-sm text-gray-600 dark:text-gray-400">N.PAT</span>
+                  <span className="text-sm font-medium">{printer.npat}</span>
                 </div>
               </div>
 
-              <div className="mt-6 flex items-center justify-between">
-                <span className="text-sm text-gray-500">
-                  {printer.online === 1 ? 'Conluido' : 'Pendente'}
-                </span>
+              <div className="mt-6 flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-700">
+                <div className="flex items-center gap-2">
+                  {printer.online === 1 ? (
+                    <>
+                      <CheckCircle2 className="w-4 h-4 text-green-600 dark:text-green-400" />
+                      <span className="text-sm font-medium text-green-600 dark:text-green-400">Concluído</span>
+                    </>
+                  ) : (
+                    <>
+                      <Clock className="w-4 h-4 text-gray-600 dark:text-gray-400" />
+                      <span className="text-sm font-medium text-gray-600 dark:text-gray-400">Pendente</span>
+                    </>
+                  )}
+                </div>
                 <Switch
                   checked={printer.online === 1}
                   onCheckedChange={(checked) => handlePrinterOnlineChange(printer.id, checked ? 1 : 0)}

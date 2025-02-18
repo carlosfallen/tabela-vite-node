@@ -1,0 +1,482 @@
+(node:29268) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Server running on http://0.0.0.0:3000
+Client connected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+(node:17236) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Server running on http://0.0.0.0:3000
+Client connected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+(node:17792) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Server running on http://0.0.0.0:3000
+Client connected
+Client disconnected
+Client connected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+(node:15644) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Server running on http://0.0.0.0:3000
+Client connected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Erro no registro: LibsqlError: SQLITE_CONSTRAINT_UNIQUE: UNIQUE constraint failed: users.username
+    at mapSqliteError (file:///C:/Users/Jorge/Documents/project/node_modules/@libsql/client/lib-esm/sqlite3.js:312:16)
+    at executeStmt (file:///C:/Users/Jorge/Documents/project/node_modules/@libsql/client/lib-esm/sqlite3.js:222:15)
+    at Sqlite3Client.execute (file:///C:/Users/Jorge/Documents/project/node_modules/@libsql/client/lib-esm/sqlite3.js:61:16)
+    at file:///C:/Users/Jorge/Documents/project/server/index.js:57:29 {
+  code: 'SQLITE_CONSTRAINT_UNIQUE',
+  rawCode: 2067,
+  [cause]: SqliteError: UNIQUE constraint failed: users.username
+      at convertError (C:\Users\Jorge\Documents\project\node_modules\libsql\index.js:48:12)
+      at Statement.run (C:\Users\Jorge\Documents\project\node_modules\libsql\index.js:289:13)
+      at executeStmt (file:///C:/Users/Jorge/Documents/project/node_modules/@libsql/client/lib-esm/sqlite3.js:215:34)
+      at Sqlite3Client.execute (file:///C:/Users/Jorge/Documents/project/node_modules/@libsql/client/lib-esm/sqlite3.js:61:16)
+      at file:///C:/Users/Jorge/Documents/project/server/index.js:57:29 {
+    code: 'SQLITE_CONSTRAINT_UNIQUE',
+    rawCode: 2067
+  }
+}
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client connected
+Client disconnected
+Client disconnected
+(node:1924) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Server running on http://0.0.0.0:3000
+Client connected
+Client connected
+Client disconnected
+Client connected
+Client connected
+Client connected
+Client disconnected
+Client disconnected
+(node:6104) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Server running on http://0.0.0.0:3000
+Client connected
+Client connected
+Client disconnected
+Client disconnected
+Client connected
+Client connected
+Client disconnected
+Client connected
+Client connected
+Client disconnected
+Client disconnected
+Client connected
+(node:6308) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Server running on http://0.0.0.0:3000
+Client connected
+Client connected
+Client disconnected
+Client connected
+Client connected
+Client disconnected
+(node:996) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Server running on http://0.0.0.0:3000
+Client connected
+Client connected
+(node:5572) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Server running on http://0.0.0.0:3000
+Client connected
+Client connected
+Client disconnected
+Client connected
+Client connected
+Client connected
+Client disconnected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client disconnected
+Client connected
+Client connected
+Client disconnected
+Client disconnected
+Client connected
+Client connected
+Client disconnected
+Client disconnected
+Client connected
+Client connected
+Client disconnected
+Client disconnected
+Client connected
+Client connected
+Client disconnected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client connected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client disconnected
+Client connected
+Client connected
+Client disconnected
+Client disconnected
+Client connected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client disconnected
+Client connected
+Client connected
+Client connected
+Client connected
+Client disconnected
+Client disconnected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client connected
+(node:17972) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Server running on http://0.0.0.0:3000
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client connected
+Client connected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+(node:11060) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Server running on http://0.0.0.0:3000
+Client connected
+Client connected
+Client connected
+(node:992) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Server running on http://0.0.0.0:3000
+Client connected
+Client connected
+Client connected
+(node:18384) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Server running on http://0.0.0.0:3000
+Client connected
+Client connected
+Client connected
+(node:23300) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Server running on http://0.0.0.0:3000
+Client connected
+Client connected
+Client connected
+(node:5380) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Server running on http://0.0.0.0:3000
+Client connected
+Client connected
+Client connected
+Client connected
+Client disconnected
+Client connected
+Client connected
+Client disconnected
+Client disconnected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client connected

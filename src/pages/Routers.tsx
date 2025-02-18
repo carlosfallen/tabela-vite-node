@@ -1,16 +1,26 @@
 import { useEffect, useState } from 'react';
 import type { Router } from '../types';
-import { Activity, Power, Eye, EyeOff, Wifi } from 'lucide-react';
+import { 
+  Activity, 
+  Power, 
+  Eye, 
+  EyeOff, 
+  Wifi, 
+  Signal, 
+  User, 
+  Lock,
+  QrCode
+} from 'lucide-react';
 import { useAuthStore } from '../store/auth';
-import QRCode from 'react-qr-code';
+import { QRCode } from 'react-qrcode-logo';
 
 export default function Routers() {
   const { user } = useAuthStore();
+  const [isClosing, setIsClosing] = useState(false);
   const [routers, setRouters] = useState<Router[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [showPassword, setShowPassword] = useState<Record<number, { login?: boolean; wifi?: boolean }>>({});
-
   const [qrCodeData, setQrCodeData] = useState<{ ssid: string; password: string; hidden: boolean } | null>(null);
 
   useEffect(() => {
@@ -60,11 +70,19 @@ export default function Routers() {
   };
 
   const closeQrCodeModal = () => {
-    setQrCodeData(null);
-  };
+    setIsClosing(true);
+    setTimeout(() => {
+      setQrCodeData(null);
+      setIsClosing(false);
+    }, 300);
+  };  
 
   if (error) {
-    return <div className="text-red-500 p-4">Error: {error}</div>;
+    return (
+      <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4 text-red-600 dark:text-red-400">
+        Error: {error}
+      </div>
+    );
   }
 
   if (isLoading) {
@@ -80,20 +98,36 @@ export default function Routers() {
   return (
     <div>
       <div className="mb-6">
-        <h1 className="text-2xl font-semibold text-gray-900">Roteadores</h1>
+        <h1 className="text-2xl font-semibold">Roteadores</h1>
+        <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">
+          Gerencie seus roteadores e acesse as configurações Wi-Fi
+        </p>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {safeRouters.map((router) => (
-          <div key={router.id} className="bg-white rounded-lg shadow overflow-hidden">
+          <div 
+            key={router.id} 
+            className={`
+              rounded-2xl overflow-hidden transition-all duration-200
+              ${router.status === 1 
+                ? 'bg-green-50 dark:bg-green-800/20 border-2 border-green-200 dark:border-green-800' 
+                : 'bg-gray-50 dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700'}
+            `}
+          >
             <div className="p-6">
               <div className="flex items-center justify-between mb-4">
-                <h3 className="text-lg font-medium text-gray-900">
-                  {router.name || 'Nome não disponível'}
-                </h3>
+                <div className="flex items-center gap-2">
+                  <Signal className={`w-5 h-5 ${router.status === 1 ? 'text-green-600 dark:text-green-400' : 'text-gray-600 dark:text-gray-400'}`} />
+                  <h2 className="text-lg font-medium">
+                    {router.name || 'Nome não disponível'}
+                  </h2>
+                </div>
                 <span
                   className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
-                    router.status === 1 ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
+                    router.status === 1 
+                      ? 'bg-green-100 text-green-800 dark:bg-green-800 dark:text-green-100' 
+                      : 'bg-red-100 text-red-800 dark:bg-red-800 dark:text-red-100'
                   }`}
                 >
                   {router.status === 1 ? (
@@ -106,86 +140,120 @@ export default function Routers() {
               </div>
 
               <div className="space-y-4">
-                <div>
-                  <p className="text-sm text-gray-500">IP Address</p>
+                <div className="p-3 bg-white/50 dark:bg-black/20 rounded-lg">
+                  <p className="text-sm text-gray-600 dark:text-gray-400">IP Address</p>
                   <p className="mt-1 text-sm font-medium">{router.ip || 'IP não disponível'}</p>
                 </div>
 
-                <div>
-                  <p className="text-sm text-gray-500">Login Credentials</p>
-                  <div className="mt-1 space-y-2">
-                    <div className="flex items-center">
+                <div className="p-3 bg-white/50 dark:bg-black/20 rounded-lg">
+                  <div className="flex items-center gap-2 mb-2">
+                    <User className="w-4 h-4 text-gray-600 dark:text-gray-400" />
+                    <p className="text-sm text-gray-600 dark:text-gray-400">Login Credentials</p>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="flex items-center justify-between">
                       <span className="text-sm font-medium">
                         {router.login_username || 'Usuário não disponível'}
                       </span>
                     </div>
-                    <div className="flex">
-                      <button
-                        onClick={() => togglePasswordVisibility(router.id, 'login')}
-                        className="w-4 h-4 mr-2 text-gray-500 hover:text-gray-700"
-                      >
-                        {showPassword[router.id]?.login ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
-                      </button>
+                    <div className="flex items-center justify-between">
                       <span className="text-sm font-medium">
                         {showPassword[router.id]?.login
                           ? router.login_password || ''
                           : (router.login_password || '').replace(/./g, '•')}
                       </span>
+                      <button
+                        onClick={() => togglePasswordVisibility(router.id, 'login')}
+                        className="p-1 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-colors"
+                      >
+                        {showPassword[router.id]?.login ? 
+                          <EyeOff className="w-4 h-4 text-gray-600 dark:text-gray-400" /> : 
+                          <Eye className="w-4 h-4 text-gray-600 dark:text-gray-400" />}
+                      </button>
                     </div>
                   </div>
                 </div>
 
-                <div>
-                  <p className="text-sm text-gray-500">Wi-Fi Settings</p>
-                  <div className="mt-1 space-y-2">
-                    <div className="flex items-center">
-                      <Wifi className="w-4 h-4 mr-2 text-gray-400" />
+                <div className="p-3 bg-white/50 dark:bg-black/20 rounded-lg">
+                  <div className="flex items-center gap-2 mb-2">
+                    <Wifi className="w-4 h-4 text-gray-600 dark:text-gray-400" />
+                    <p className="text-sm text-gray-600 dark:text-gray-400">Wi-Fi Settings</p>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="flex items-center justify-between">
                       <span className="text-sm font-medium">
                         {router.wifi_ssid || 'SSID não disponível'}
                       </span>
                     </div>
-                    <div className="flex items-center">
-                      <button
-                        onClick={() => togglePasswordVisibility(router.id, 'wifi')}
-                        className="w-4 h-4 mr-2 text-gray-500 hover:text-gray-700"
-                      >
-                        {showPassword[router.id]?.wifi ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
-                      </button>
+                    <div className="flex items-center justify-between">
                       <span className="text-sm font-medium">
                         {showPassword[router.id]?.wifi
                           ? router.wifi_password || ''
                           : (router.wifi_password || '').replace(/./g, '•')}
                       </span>
+                      <button
+                        onClick={() => togglePasswordVisibility(router.id, 'wifi')}
+                        className="p-1 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-colors"
+                      >
+                        {showPassword[router.id]?.wifi ? 
+                          <EyeOff className="w-4 h-4 text-gray-600 dark:text-gray-400" /> : 
+                          <Eye className="w-4 h-4 text-gray-600 dark:text-gray-400" />}
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div className="mt-6">
-                <button
-                  onClick={() => generateQrCode(router)}
-                  className="w-full inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-                >
-                  Gerar QR Code do Wi-Fi
-                </button>
-              </div>
+              <button
+                onClick={() => generateQrCode(router)}
+                className="mt-6 w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 
+                  bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-xl
+                  transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 
+                  focus:ring-indigo-500 dark:focus:ring-offset-gray-800"
+              >
+                <QrCode className="w-4 h-4" />
+                Gerar QR Code do Wi-Fi
+              </button>
             </div>
           </div>
         ))}
       </div>
 
-      {/* Modal para exibir o QR Code */}
       {qrCodeData && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h2 className="text-lg font-semibold mb-4">QR Code do Wi-Fi</h2>
-            <QRCode
-              value={`WIFI:S:${qrCodeData.ssid};T:WPA;P:${qrCodeData.password};H:${qrCodeData.hidden};;`}
-              size={256}
-            />
+        <div 
+          className={`fixed inset-0 flex items-center justify-center z-50 transition-all duration-300 ${
+            isClosing ? "animate-fadeOutScale" : "animate-fadeInScale"
+          }`}
+        >
+          <div className="absolute inset-0 bg-gray-900/20 backdrop-blur-sm" onClick={closeQrCodeModal} />
+          <div className="relative bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-xl max-w-sm w-full mx-4">
+            <div className="text-center mb-4">
+              <h2 className="text-lg font-semibold mb-2">Aponte a câmera do celular</h2>
+              <p className="text-sm text-gray-600 dark:text-gray-400">
+                Escaneie o QR code para conectar ao Wi-Fi
+              </p>
+            </div>
+            
+            <div className="flex justify-center mb-4">
+              <div className="p-4 bg-gray-100 dark:bg-gray-700 rounded-2xl">
+                <QRCode
+                  value={`WIFI:S:${qrCodeData.ssid};T:WPA;P:${qrCodeData.password};H:${qrCodeData.hidden};;`}
+                  size={200}
+                  logoImage="/logo.png"
+                  logoWidth={50}
+                  removeQrCodeBehindLogo={true}
+                  qrStyle="dots"
+                  fgColor="#000000"
+                  bgColor="#ffffff"
+                />
+              </div>
+            </div>
+            
             <button
               onClick={closeQrCodeModal}
-              className="mt-4 w-full inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+              className="w-full inline-flex items-center justify-center px-4 py-2.5 text-sm font-medium
+                text-white bg-red-600 hover:bg-red-700 rounded-xl transition-colors duration-200
+                focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
             >
               Fechar
             </button>

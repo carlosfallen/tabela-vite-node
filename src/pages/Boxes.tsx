@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { Monitor } from 'lucide-react';
-import { Switch } from '../components/ui/switch'; // Certifique-se de usar o Switch correto
+import { Monitor, CheckCircle2, Clock } from 'lucide-react';
+import { Switch } from '../components/ui/switch';
 import type { Box } from '../types';
 import { useAuthStore } from '../store/auth';
 
@@ -63,7 +63,7 @@ export default function Boxes() {
       setBoxes((prev) =>
         prev.map((box) =>
           box.device_id === device_id
-            ? { ...box, power_status: newPowerStatus } // Atualiza apenas o power_status
+            ? { ...box, power_status: newPowerStatus }
             : box
         )
       );
@@ -87,39 +87,69 @@ export default function Boxes() {
   return (
     <div>
       <div className="mb-6">
-        <h1 className="text-2xl font-semibold text-gray-900">Caixas</h1>
+        <h1 className="text-2xl font-semibold">Caixas</h1>
+        <div className="flex gap-4 mt-2">
+          <div className="flex items-center gap-2">
+            <div className="w-3 h-3 bg-green-100 dark:bg-green-800 rounded-full"></div>
+            <span className="text-sm text-gray-600 dark:text-gray-400">Concluídas</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-3 h-3 bg-gray-100 dark:bg-gray-700 rounded-full"></div>
+            <span className="text-sm text-gray-600 dark:text-gray-400">Pendentes</span>
+          </div>
+        </div>
       </div>
 
-      <ul className="divide-y divide-gray-200">
+      <ul className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {boxes.map((box) => (
           <li
             key={box.device_id}
-            className="flex items-center justify-between py-4 px-6 bg-white rounded-lg shadow mb-4"
+            className={`
+              relative overflow-hidden rounded-2xl shadow-sm transition-all duration-200
+              ${box.power_status === 1 
+                ? 'bg-green-50 dark:bg-green-800/20 border-2 border-green-200 dark:border-green-800' 
+                : 'bg-gray-50 dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700'}
+            `}
           >
-            <div className="flex items-center">
-              <Monitor className="w-6 h-6 text-gray-500 mr-4" />
-              <div>
-                <h3 className="text-lg font-medium text-gray-900">{box.name}</h3>
-                <p className="text-sm text-gray-500">{box.ip}</p>
+            <div className="p-6">
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center gap-3">
+                  <Monitor className={`w-6 h-6 ${box.power_status === 1 ? 'text-green-600 dark:text-green-400' : 'text-gray-600 dark:text-gray-400'}`} />
+                  <div>
+                    <h3 className="text-lg font-medium">{box.name}</h3>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">{box.ip}</p>
+                  </div>
+                </div>
+                <Switch
+                  checked={box.power_status === 1}
+                  onCheckedChange={(checked) => togglePowerStatus(box.device_id, checked ? 1 : 0)}
+                />
               </div>
-            </div>
-            <div className="flex items-center space-x-4">
-              <span
-                className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium capitalize ${
-                  box.status === 1
-                    ? 'bg-green-100 text-green-800'
-                    : 'bg-red-100 text-red-800'
-                }`}
-              >
-                {box.status === 1 ? 'Ativo' : 'Inativo'}
-              </span>
-              <span className="text-sm text-gray-500">
-                  {box.power_status === 1 ? 'Conluido' : 'Pendente'}
+              
+              <div className="flex items-center justify-between">
+                <span
+                  className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium capitalize ${
+                    box.status === 1
+                      ? 'bg-green-100 text-green-800 dark:bg-green-800 dark:text-green-100'
+                      : 'bg-red-100 text-red-800 dark:bg-red-800 dark:text-red-100'
+                  }`}
+                >
+                  {box.status === 1 ? 'Ativo' : 'Inativo'}
                 </span>
-              <Switch
-                checked={box.power_status === 1}
-                onCheckedChange={(checked) => togglePowerStatus(box.device_id, checked ? 1 : 0)}
-              />
+                <div className="flex items-center gap-2">
+                  {box.power_status === 1 ? (
+                    <>
+                      <CheckCircle2 className="w-4 h-4 text-green-600 dark:text-green-400" />
+                      <span className="text-sm font-medium text-green-600 dark:text-green-400">Concluído</span>
+                    </>
+                  ) : (
+                    <>
+                      <Clock className="w-4 h-4 text-gray-600 dark:text-gray-400" />
+                      <span className="text-sm font-medium text-gray-600 dark:text-gray-400">Pendente</span>
+                    </>
+                  )}
+                </div>
+              </div>
             </div>
           </li>
         ))}

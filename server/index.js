@@ -7,6 +7,8 @@ import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import ping from 'ping';
 import dotenv from 'dotenv';
+import * as XLSX from 'xlsx';
+import fs from 'fs';
 
 // Initialize environment variables
 dotenv.config();
@@ -103,6 +105,48 @@ app.get('/api/devices', authenticateToken, async (req, res) => {
   res.json(result.rows);
 });
 
+app.get('/api/devices/export', authenticateToken, async (req, res) => {
+  try {
+    // Buscar dispositivos no banco de dados
+    const result = await db.execute('SELECT * FROM devices');
+    const devices = result.rows;
+
+    console.log('Dispositivos encontrados:', devices);  // Verifique os dados retornados
+
+    if (devices.length === 0) {
+      return res.status(404).json({ error: 'Nenhum dispositivo encontrado' });
+    }
+
+    // Criar a planilha com os dados
+    const ws = XLSX.utils.json_to_sheet(devices);
+
+    console.log('Planilha gerada:', ws);  // Verifique se a planilha está sendo criada corretamente
+
+    // Criar um novo workbook e adicionar a planilha
+    const wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, 'Devices');
+
+    // Caminho para salvar o arquivo temporário
+    const filePath = './devices.xlsx';
+    XLSX.writeFile(wb, filePath);
+
+    // Enviar o arquivo para o cliente
+    res.download(filePath, 'devices.xlsx', (err) => {
+      if (err) {
+        console.error('Erro ao enviar arquivo:', err);
+        return res.status(500).json({ error: 'Erro ao gerar planilha' });
+      }
+
+      // Remover o arquivo após o envio
+      fs.unlinkSync(filePath);
+    });
+  } catch (error) {
+    console.error('Erro ao exportar devices:', error);
+    res.status(500).json({ error: 'Erro ao exportar dados' });
+  }
+});
+
+
 /* app.post('/api/devices/:id/ping', authenticateToken, async (req, res) => {
   const { id } = req.params;
   const result = await db.execute({
@@ -156,9 +200,10 @@ app.get('/api/routers', authenticateToken, async (req, res) => {
 // Printer routes
 app.get('/api/printers', authenticateToken, async (req, res) => {
   const result = await db.execute(`
-      SELECT p.*, d.ip, d.sector, d.status, p.model, p.npat, p.li, p.lf, p.online
-      FROM printers p
-      JOIN Devices d ON p.device_id = d.id
+    SELECT p.*, d.ip, d.sector, d.status, p.model, p.npat, p.li, p.lf, p.online
+    FROM printers p
+    JOIN devices d ON p.device_id = d.id
+    WHERE p.npat > 0;
   `);
   res.json(result.rows);
 });
@@ -275,7 +320,7 @@ const pingAllDevices = async () => {
 };
 
 // Run ping service every 30 seconds
-setInterval(pingAllDevices, 30000);
+setInterval(pingAllDevices, 600000);
 
 // Socket.io connection handling
 io.on('connection', (socket) => {

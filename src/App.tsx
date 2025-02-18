@@ -7,6 +7,8 @@ import Devices from './pages/Devices';
 import Routers from './pages/Routers';
 import Printers from './pages/Printers';
 import Boxes from './pages/Boxes';
+import Print from './pages/sheet';
+import { ThemeProvider } from './contexts/theme';
 
 const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
   const user = useAuthStore((state) => state.user);
@@ -16,25 +18,28 @@ const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route
-          path="/"
-          element={
-            <ProtectedRoute>
-              <Layout />
-            </ProtectedRoute>
-          }
-        >
-          <Route index element={<Devices />} />
-          <Route path="routers" element={<Routers />} />
-          <Route path="printers" element={<Printers />} />
-          <Route path="boxes" element={<Boxes />} />
-        </Route>
-      </Routes>
-    </Router>
+    <ThemeProvider>
+      <Router>
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route
+            path="/"
+            element={
+              <ProtectedRoute>
+                <Layout />
+              </ProtectedRoute>
+            }
+          >
+            <Route index element={<Devices />} />
+            <Route path="routers" element={<Routers />} />
+            <Route path="printers" element={<Printers />} />
+            <Route path="boxes" element={<Boxes />} />
+            <Route path="sheet" element={<Print />} />
+          </Route>
+        </Routes>
+      </Router>
+    </ThemeProvider>
   );
 }
 

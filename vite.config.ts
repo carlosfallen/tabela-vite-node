@@ -9,6 +9,6 @@ export default defineConfig({
   },
   server: {
     host: '0.0.0.0', // Ou use o seu IP local específico
-    port: 5173, // Ou qualquer outra porta que você queira usar
+    port: 80, // Ou qualquer outra porta que você queira usar
   },
 });

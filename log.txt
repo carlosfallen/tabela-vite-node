@@ -1,0 +1,622 @@
+node:internal/modules/cjs/loader:1252
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\Users\Jorge\Documents\project\run'
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1249:15)
+    at Function._load (node:internal/modules/cjs/loader:1075:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v22.12.0
+node:internal/modules/cjs/loader:1252
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\Users\Jorge\Documents\project\run'
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1249:15)
+    at Function._load (node:internal/modules/cjs/loader:1075:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v22.12.0
+node:internal/modules/cjs/loader:1252
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\Users\Jorge\Documents\project\run'
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1249:15)
+    at Function._load (node:internal/modules/cjs/loader:1075:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v22.12.0
+node:internal/modules/cjs/loader:1252
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\Users\Jorge\Documents\project\run'
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1249:15)
+    at Function._load (node:internal/modules/cjs/loader:1075:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v22.12.0
+node:internal/modules/cjs/loader:1252
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\Users\Jorge\Documents\project\npm'
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1249:15)
+    at Function._load (node:internal/modules/cjs/loader:1075:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v22.12.0
+node:internal/modules/cjs/loader:1252
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\Users\Jorge\Documents\project\npm'
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1249:15)
+    at Function._load (node:internal/modules/cjs/loader:1075:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v22.12.0
+node:internal/modules/cjs/loader:1252
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\Users\Jorge\Documents\project\npm'
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1249:15)
+    at Function._load (node:internal/modules/cjs/loader:1075:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v22.12.0
+node:internal/modules/cjs/loader:1252
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\Users\Jorge\Documents\project\npm'
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1249:15)
+    at Function._load (node:internal/modules/cjs/loader:1075:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v22.12.0
+node:internal/modules/cjs/loader:1252
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\Users\Jorge\Documents\project\npm'
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1249:15)
+    at Function._load (node:internal/modules/cjs/loader:1075:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v22.12.0
+node:internal/modules/cjs/loader:1252
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\Users\Jorge\Documents\project\npm'
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1249:15)
+    at Function._load (node:internal/modules/cjs/loader:1075:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v22.12.0
+node:internal/modules/cjs/loader:1252
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\Users\Jorge\Documents\project\npm'
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1249:15)
+    at Function._load (node:internal/modules/cjs/loader:1075:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v22.12.0
+
+  [32m[1mVITE[22m v5.4.8[39m  [2mready in [0m[1m553[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://26.109.45.144:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://100.111.119.88:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://10.0.11.150:[1m80[22m/[39m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+[2m16:47:59[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m16:48:17[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m16:48:22[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m16:51:00[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m16:52:16[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/pages/print.tsx[22m
+[2m16:59:49[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/pages/print.tsx[22m
+[2m17:01:37[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/pages/print.tsx[22m
+[2m17:03:04[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/index.css[22m
+[2m17:59:25[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/print.tsx, /src/index.css[22m
+[2m18:04:10[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/print.tsx, /src/index.css[22m
+[2m18:05:07[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/print.tsx, /src/index.css[22m
+[2m18:05:19[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/print.tsx, /src/index.css[22m
+[2m18:05:55[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/print.tsx, /src/index.css[22m
+[2m18:06:05[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/print.tsx, /src/index.css[22m
+[2m18:06:31[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/print.tsx, /src/index.css[22m
+[2m18:08:00[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/print.tsx, /src/index.css[22m
+[2m18:08:29[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/print.tsx, /src/index.css[22m
+[2m18:08:36[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/print.tsx, /src/index.css[22m
+[2m18:09:38[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/print.tsx, /src/index.css[22m
+
+  [32m[1mVITE[22m v5.4.8[39m  [2mready in [0m[1m723[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://26.109.45.144:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://100.111.119.88:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://10.0.11.150:[1m80[22m/[39m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+
+  [32m[1mVITE[22m v5.4.8[39m  [2mready in [0m[1m570[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://26.109.45.144:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://100.111.119.88:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://10.0.11.150:[1m80[22m/[39m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+
+  [32m[1mVITE[22m v5.4.8[39m  [2mready in [0m[1m610[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://26.109.45.144:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://100.111.119.88:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://10.0.11.150:[1m80[22m/[39m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+
+  [32m[1mVITE[22m v5.4.8[39m  [2mready in [0m[1m555[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://26.109.45.144:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://100.111.119.88:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://10.0.11.150:[1m80[22m/[39m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+[2m12:14:27[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mandroid/app/src/main/assets/public/index.html[22m
+[2m12:14:37[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mandroid/app/src/main/assets/public/index.html[22m
+[2m12:14:39[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mandroid/app/src/main/assets/public/index.html[22m
+[2m12:37:12[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mandroid/build/reports/problems/problems-report.html[22m
+[2m12:50:31[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mandroid/app/src/main/assets/public/index.html[22m
+[2m12:50:33[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mandroid/app/src/main/assets/public/index.html[22m
+[2m12:52:04[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mandroid/app/src/main/assets/public/index.html[22m
+[2m12:53:39[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mandroid/app/src/main/assets/public/index.html[22m
+[2m12:53:39[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mandroid/build/reports/problems/problems-report.html[22m
+[2m12:53:54[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mandroid/app/src/main/assets/public/index.html[22m
+[2m12:54:00[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mandroid/app/src/main/assets/public/index.html[22m
+[2m12:54:38[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mandroid/build/reports/problems/problems-report.html[22m
+[2m13:06:53[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mandroid/app/build/intermediates/assets/debug/mergeDebugAssets/public/index.html[22m
+[2m13:07:21[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mandroid/build/reports/problems/problems-report.html[22m
+[2m13:16:14[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mandroid/build/reports/problems/problems-report.html[22m
+[2m13:16:15[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mandroid/app/src/main/assets/public/index.html[22m
+[2m13:16:15[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mandroid/app/build/intermediates/assets/debug/mergeDebugAssets/public/index.html[22m
+[2m13:16:44[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mandroid/app/src/main/assets/public/index.html[22m
+[2m13:16:49[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mandroid/app/src/main/assets/public/index.html[22m
+[2m13:16:59[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mandroid/app/src/main/assets/public/index.html[22m
+[2m13:17:44[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mandroid/build/reports/problems/problems-report.html[22m
+[2m13:18:07[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mandroid/app/build/intermediates/assets/debug/mergeDebugAssets/public/index.html[22m
+[2m13:18:18[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mandroid/build/reports/problems/problems-report.html[22m
+[2m13:29:09[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m13:31:04[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m13:31:25[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m13:33:35[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m13:34:04[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mandroid/build/reports/problems/problems-report.html[22m
+[2m13:34:04[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mandroid/app/src/main/assets/public/index.html[22m
+[2m13:34:04[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mandroid/app/build/intermediates/assets/debug/mergeDebugAssets/public/index.html[22m
+[2m13:34:14[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mandroid/app/src/main/assets/public/index.html[22m
+[2m13:34:27[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mandroid/app/src/main/assets/public/index.html[22m
+[2m13:34:36[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mandroid/app/src/main/assets/public/index.html[22m
+[2m13:35:13[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mandroid/build/reports/problems/problems-report.html[22m
+[2m13:35:47[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mandroid/app/build/intermediates/assets/debug/mergeDebugAssets/public/index.html[22m
+[2m13:35:57[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mandroid/build/reports/problems/problems-report.html[22m
+[2m14:52:17[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mandroid/app/build/intermediates/assets/release/mergeReleaseAssets/public/index.html[22m
+[2m14:52:22[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mandroid/build/reports/problems/problems-report.html[22m
+Re-optimizing dependencies because lockfile has changed
+
+  [32m[1mVITE[22m v5.4.8[39m  [2mready in [0m[1m906[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://26.109.45.144:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://172.26.208.1:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://10.0.11.150:[1m80[22m/[39m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+
+  [32m[1mVITE[22m v5.4.8[39m  [2mready in [0m[1m1049[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://26.109.45.144:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://172.23.96.1:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://10.0.11.150:[1m80[22m/[39m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+
+  [32m[1mVITE[22m v5.4.8[39m  [2mready in [0m[1m881[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://26.109.45.144:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://172.25.96.1:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://10.0.11.150:[1m80[22m/[39m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+
+  [32m[1mVITE[22m v5.4.8[39m  [2mready in [0m[1m1392[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://26.109.45.144:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://172.17.240.1:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://172.26.208.1:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://10.0.11.150:[1m80[22m/[39m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+
+  [32m[1mVITE[22m v5.4.8[39m  [2mready in [0m[1m742[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://26.109.45.144:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://10.0.11.150:[1m80[22m/[39m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+[2m13:03:20[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:\Users\Jorge\Documents\project\vite-project\tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m13:03:20[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mvite-project/index.html[22m
+[2m13:03:45[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/pages/Services.tsx[22m
+[2m13:03:48[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/print.tsx, /src/index.css[22m
+[2m13:03:48[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to load url /src/pages/print.tsx (resolved id: C:/Users/Jorge/Documents/project/src/pages/print.tsx) in C:/Users/Jorge/Documents/project/src/App.tsx. Does the file exist?
+[2m13:03:54[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/print.tsx[22m
+[2m13:03:59[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/pages/Home.tsx[22m
+[2m13:04:10[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/pages/Contact.tsx[22m
+[2m13:04:10[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/pages/Budget.tsx[22m
+[2m13:04:10[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/pages/About.tsx[22m
+[2m13:04:27[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/components/Header.tsx[22m
+[2m13:04:29[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/components/Footer.tsx[22m
+[2m13:45:04[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m13:45:18[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m13:45:20[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m16:28:00[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m16:28:00[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Jorge\Documents\project\src\components\Layout.tsx: Unexpected token, expected "," (92:6)
+
+[0m [90m 90 |[31m       [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m
+ [90m 91 |[31m
+[31m[1m>[22m[31m[90m 92 |[31m       {[90m/* Mobile Navigation */[31m}
+ [90m    |[31m       [31m[1m^[22m[31m
+ [90m 93 |[31m       {isMobileMenuOpen [33m&&[31m (
+ [90m 94 |[31m         [33m<[31m[33mdiv[31m className[33m=[31m[32m"fixed inset-0 z-40 bg-gray-500 bg-opacity-50 backdrop-blur-sm"[31m[33m>[31m
+ [90m 95 |[31m           [33m<[31m[33mdiv[31m className[33m=[31m[32m"fixed inset-y-0 left-0 w-64 bg-white shadow-lg transform transition-transform duration-300"[31m[33m>[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Jorge/Documents/project/src/components/Layout.tsx[39m:92:6
+[33m  90 |        </div>
+  91 |  
+  92 |        {/* Mobile Navigation */}
+     |        ^
+  93 |        {isMobileMenuOpen && (
+  94 |          <div className="fixed inset-0 z-40 bg-gray-500 bg-opacity-50 backdrop-blur-sm">[39m
+      at constructor (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:362:19)
+      at TypeScriptParserMixin.raise (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:3259:19)
+      at TypeScriptParserMixin.unexpected (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:3279:16)
+      at TypeScriptParserMixin.expect (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:3589:12)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:11182:14)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10849:23)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:6811:20)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10591:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10576:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10556:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:9483:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10410:61)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10415:23)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10392:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10355:21)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:9432:20)
+      at TypeScriptParserMixin.parseExpressionBase (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10309:23)
+      at C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10305:39
+      at TypeScriptParserMixin.allowInAnd (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:11932:16)
+      at TypeScriptParserMixin.parseExpression (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10305:17)
+      at TypeScriptParserMixin.parseReturnStatement (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:12622:28)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:12274:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:9157:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:12243:17)
+      at TypeScriptParserMixin.parseStatementListItem (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:12223:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:12796:61)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:12789:10)
+      at TypeScriptParserMixin.parseBlock (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:12777:10)
+      at TypeScriptParserMixin.parseFunctionBody (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:11620:24)
+      at TypeScriptParserMixin.parseFunctionBodyAndFinish (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:11606:10)
+      at TypeScriptParserMixin.parseFunctionBodyAndFinish (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:8898:18)
+      at C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:12921:12
+      at TypeScriptParserMixin.withSmartMixTopicForbiddingContext (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:11914:14)
+      at TypeScriptParserMixin.parseFunction (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:12920:10)
+      at TypeScriptParserMixin.parseExportDefaultExpression (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:13375:19)
+      at TypeScriptParserMixin.parseExportDefaultExpression (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:9121:18)
+      at TypeScriptParserMixin.parseExport (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:13301:25)
+      at TypeScriptParserMixin.parseExport (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:9104:20)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:12356:27)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:9157:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:12243:17)
+      at TypeScriptParserMixin.parseModuleItem (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:12220:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:12796:36)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:12789:10)
+      at TypeScriptParserMixin.parseProgram (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:12117:10)
+      at TypeScriptParserMixin.parseTopLevel (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:12107:25)
+      at TypeScriptParserMixin.parse (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:13923:10)
+      at TypeScriptParserMixin.parse (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:9771:18)
+      at parse (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:13957:38)
+      at parser (C:\Users\Jorge\Documents\project\node_modules\@babel\core\lib\parser\index.js:41:34)
+[2m16:28:00[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Jorge\Documents\project\src\components\Layout.tsx: Unexpected token, expected "," (92:6)
+
+[0m [90m 90 |[31m       [33m<[31m[33m/[31m[33mdiv[31m[33m>[31m
+ [90m 91 |[31m
+[31m[1m>[22m[31m[90m 92 |[31m       {[90m/* Mobile Navigation */[31m}
+ [90m    |[31m       [31m[1m^[22m[31m
+ [90m 93 |[31m       {isMobileMenuOpen [33m&&[31m (
+ [90m 94 |[31m         [33m<[31m[33mdiv[31m className[33m=[31m[32m"fixed inset-0 z-40 bg-gray-500 bg-opacity-50 backdrop-blur-sm"[31m[33m>[31m
+ [90m 95 |[31m           [33m<[31m[33mdiv[31m className[33m=[31m[32m"fixed inset-y-0 left-0 w-64 bg-white shadow-lg transform transition-transform duration-300"[31m[33m>[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Jorge/Documents/project/src/components/Layout.tsx[39m:92:6
+[33m  90 |        </div>
+  91 |  
+  92 |        {/* Mobile Navigation */}
+     |        ^
+  93 |        {isMobileMenuOpen && (
+  94 |          <div className="fixed inset-0 z-40 bg-gray-500 bg-opacity-50 backdrop-blur-sm">[39m
+      at constructor (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:362:19)
+      at TypeScriptParserMixin.raise (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:3259:19)
+      at TypeScriptParserMixin.unexpected (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:3279:16)
+      at TypeScriptParserMixin.expect (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:3589:12)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:11182:14)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10849:23)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:6811:20)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10591:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10576:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10556:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:9483:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10410:61)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10415:23)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10392:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10355:21)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:9432:20)
+      at TypeScriptParserMixin.parseExpressionBase (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10309:23)
+      at C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10305:39
+      at TypeScriptParserMixin.allowInAnd (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:11932:16)
+      at TypeScriptParserMixin.parseExpression (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10305:17)
+      at TypeScriptParserMixin.parseReturnStatement (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:12622:28)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:12274:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:9157:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:12243:17)
+      at TypeScriptParserMixin.parseStatementListItem (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:12223:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:12796:61)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:12789:10)
+      at TypeScriptParserMixin.parseBlock (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:12777:10)
+      at TypeScriptParserMixin.parseFunctionBody (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:11620:24)
+      at TypeScriptParserMixin.parseFunctionBodyAndFinish (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:11606:10)
+      at TypeScriptParserMixin.parseFunctionBodyAndFinish (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:8898:18)
+      at C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:12921:12
+      at TypeScriptParserMixin.withSmartMixTopicForbiddingContext (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:11914:14)
+      at TypeScriptParserMixin.parseFunction (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:12920:10)
+      at TypeScriptParserMixin.parseExportDefaultExpression (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:13375:19)
+      at TypeScriptParserMixin.parseExportDefaultExpression (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:9121:18)
+      at TypeScriptParserMixin.parseExport (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:13301:25)
+      at TypeScriptParserMixin.parseExport (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:9104:20)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:12356:27)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:9157:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:12243:17)
+      at TypeScriptParserMixin.parseModuleItem (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:12220:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:12796:36)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:12789:10)
+      at TypeScriptParserMixin.parseProgram (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:12117:10)
+      at TypeScriptParserMixin.parseTopLevel (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:12107:25)
+      at TypeScriptParserMixin.parse (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:13923:10)
+      at TypeScriptParserMixin.parse (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:9771:18)
+      at parse (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:13957:38)
+      at parser (C:\Users\Jorge\Documents\project\node_modules\@babel\core\lib\parser\index.js:41:34)
+[2m16:28:34[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m16:28:43[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m16:29:24[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/print.tsx, /src/index.css[22m
+[2m16:29:24[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to load url /src/pages/print.tsx (resolved id: C:/Users/Jorge/Documents/project/src/pages/print.tsx) in C:/Users/Jorge/Documents/project/src/App.tsx. Does the file exist?
+[2m16:29:48[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/index.css[22m
+[2m16:29:48[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "./pages/print" from "src/App.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/Jorge/Documents/project/src/App.tsx[39m:10:18
+[33m  25 |  import Printers from "./pages/Printers";
+  26 |  import Boxes from "./pages/Boxes";
+  27 |  import Print from "./pages/print";
+     |                     ^
+  28 |  const ProtectedRoute = ({ children }) => {
+  29 |    _s();[39m
+      at TransformPluginContext._formatError (file:///C:/Users/Jorge/Documents/project/node_modules/vite/dist/node/chunks/dep-CDnG8rE7.js:49193:41)
+      at TransformPluginContext.error (file:///C:/Users/Jorge/Documents/project/node_modules/vite/dist/node/chunks/dep-CDnG8rE7.js:49188:16)
+      at normalizeUrl (file:///C:/Users/Jorge/Documents/project/node_modules/vite/dist/node/chunks/dep-CDnG8rE7.js:63984:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///C:/Users/Jorge/Documents/project/node_modules/vite/dist/node/chunks/dep-CDnG8rE7.js:64116:39
+      at async Promise.all (index 12)
+      at async TransformPluginContext.transform (file:///C:/Users/Jorge/Documents/project/node_modules/vite/dist/node/chunks/dep-CDnG8rE7.js:64043:7)
+      at async PluginContainer.transform (file:///C:/Users/Jorge/Documents/project/node_modules/vite/dist/node/chunks/dep-CDnG8rE7.js:49034:18)
+      at async loadAndTransform (file:///C:/Users/Jorge/Documents/project/node_modules/vite/dist/node/chunks/dep-CDnG8rE7.js:51867:27)
+      at async viteTransformMiddleware (file:///C:/Users/Jorge/Documents/project/node_modules/vite/dist/node/chunks/dep-CDnG8rE7.js:61824:24)
+[2m16:29:50[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "./pages/print" from "src/App.tsx". Does the file exist?
+[2m16:30:02[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/App.tsx[22m
+[2m16:30:39[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m16:31:04[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/sheet.tsx, /src/index.css[22m
+[2m16:31:08[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/sheet.tsx, /src/index.css[22m
+[2m16:31:17[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/sheet.tsx, /src/index.css[22m
+[2m16:31:26[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/sheet.tsx, /src/index.css[22m
+[2m16:31:35[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/sheet.tsx, /src/index.css[22m
+[2m16:31:40[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/sheet.tsx, /src/index.css[22m
+[2m16:31:47[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/sheet.tsx, /src/index.css[22m
+[2m16:32:25[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m16:35:23[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/components/ui/toaster.tsx[22m
+[2m16:35:24[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/components/ui/toast.tsx[22m
+[2m16:36:38[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m16:36:38[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../contexts/theme" from "src/components/Layout.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/Jorge/Documents/project/src/components/Layout.tsx[39m:9:25
+[33m  33 |  import { useLocation, Link, Outlet } from "react-router-dom";
+  34 |  import { useAuthStore } from "../store/auth";
+  35 |  import { useTheme } from "../contexts/theme";
+     |                            ^
+  36 |  export default function Layout() {
+  37 |    _s();[39m
+      at TransformPluginContext._formatError (file:///C:/Users/Jorge/Documents/project/node_modules/vite/dist/node/chunks/dep-CDnG8rE7.js:49193:41)
+      at TransformPluginContext.error (file:///C:/Users/Jorge/Documents/project/node_modules/vite/dist/node/chunks/dep-CDnG8rE7.js:49188:16)
+      at normalizeUrl (file:///C:/Users/Jorge/Documents/project/node_modules/vite/dist/node/chunks/dep-CDnG8rE7.js:63984:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///C:/Users/Jorge/Documents/project/node_modules/vite/dist/node/chunks/dep-CDnG8rE7.js:64116:39
+      at async Promise.all (index 7)
+      at async TransformPluginContext.transform (file:///C:/Users/Jorge/Documents/project/node_modules/vite/dist/node/chunks/dep-CDnG8rE7.js:64043:7)
+      at async PluginContainer.transform (file:///C:/Users/Jorge/Documents/project/node_modules/vite/dist/node/chunks/dep-CDnG8rE7.js:49034:18)
+      at async loadAndTransform (file:///C:/Users/Jorge/Documents/project/node_modules/vite/dist/node/chunks/dep-CDnG8rE7.js:51867:27)
+[2m16:36:38[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../contexts/theme" from "src/components/Layout.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/Jorge/Documents/project/src/components/Layout.tsx[39m:9:25
+[33m  33 |  import { useLocation, Link, Outlet } from "react-router-dom";
+  34 |  import { useAuthStore } from "../store/auth";
+  35 |  import { useTheme } from "../contexts/theme";
+     |                            ^
+  36 |  export default function Layout() {
+  37 |    _s();[39m
+      at TransformPluginContext._formatError (file:///C:/Users/Jorge/Documents/project/node_modules/vite/dist/node/chunks/dep-CDnG8rE7.js:49193:41)
+      at TransformPluginContext.error (file:///C:/Users/Jorge/Documents/project/node_modules/vite/dist/node/chunks/dep-CDnG8rE7.js:49188:16)
+      at normalizeUrl (file:///C:/Users/Jorge/Documents/project/node_modules/vite/dist/node/chunks/dep-CDnG8rE7.js:63984:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///C:/Users/Jorge/Documents/project/node_modules/vite/dist/node/chunks/dep-CDnG8rE7.js:64116:39
+      at async Promise.all (index 7)
+      at async TransformPluginContext.transform (file:///C:/Users/Jorge/Documents/project/node_modules/vite/dist/node/chunks/dep-CDnG8rE7.js:64043:7)
+      at async PluginContainer.transform (file:///C:/Users/Jorge/Documents/project/node_modules/vite/dist/node/chunks/dep-CDnG8rE7.js:49034:18)
+      at async loadAndTransform (file:///C:/Users/Jorge/Documents/project/node_modules/vite/dist/node/chunks/dep-CDnG8rE7.js:51867:27)
+[2m16:36:53[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/index.css[22m
+[2m16:36:53[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/context/theme.tsx[22m
+[2m16:37:47[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/index.css[22m
+[2m16:38:42[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mtailwind.config.js[22m
+[2m16:40:23[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m16:40:34[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m16:40:43[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m16:40:56[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m16:41:20[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m16:41:25[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m16:41:56[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m16:41:58[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m16:41:59[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m16:42:28[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m16:42:31[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m16:43:25[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m16:43:40[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m16:43:47[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m16:43:59[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m16:44:55[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m16:45:32[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m16:45:41[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m16:46:07[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m16:46:40[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m16:46:49[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m16:47:05[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m16:49:13[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m16:49:21[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m16:49:25[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m16:49:43[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m16:49:50[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m16:51:03[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m16:52:29[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m16:53:46[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m16:55:36[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m16:55:43[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m16:55:57[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m16:56:26[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m16:56:40[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m16:56:54[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m16:57:28[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m16:59:34[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Printers.tsx, /src/index.css[22m
+[2m17:00:17[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Printers.tsx, /src/index.css[22m
+[2m17:00:27[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Printers.tsx, /src/index.css[22m
+[2m17:00:32[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Printers.tsx, /src/index.css[22m
+[2m17:00:42[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Printers.tsx, /src/index.css[22m
+[2m17:01:56[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/ui/switch.tsx, /src/index.css[22m
+[2m17:03:40[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Boxes.tsx, /src/index.css[22m
+[2m17:04:03[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Boxes.tsx, /src/index.css[22m
+[2m17:47:02[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m17:50:43[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/contexts/theme.tsx, /src/index.css[22m
+[2m17:50:43[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/contexts/theme.tsx[22m Could not Fast Refresh ("useTheme" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m17:50:43[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css, /src/App.tsx[22m
+[2m17:58:34[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mandroid/app/src/main/assets/public/index.html[22m
+
+  [32m[1mVITE[22m v5.4.8[39m  [2mready in [0m[1m1363[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://26.109.45.144:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://100.111.119.88:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://10.0.11.150:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://172.28.224.1:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://172.26.208.1:[1m80[22m/[39m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+
+  [32m[1mVITE[22m v5.4.8[39m  [2mready in [0m[1m609[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://26.109.45.144:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://100.111.119.88:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://10.0.11.150:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://172.28.224.1:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://172.26.208.1:[1m80[22m/[39m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+
+  [32m[1mVITE[22m v5.4.8[39m  [2mready in [0m[1m593[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://26.109.45.144:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://100.111.119.88:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://10.0.11.150:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://172.28.224.1:[1m80[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://172.26.208.1:[1m80[22m/[39m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
