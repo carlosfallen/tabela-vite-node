@@ -620,3 +620,337 @@ Re-optimizing dependencies because lockfile has changed
   [32m➜[39m  [1mNetwork[22m: [36mhttp://172.28.224.1:[1m80[22m/[39m
   [32m➜[39m  [1mNetwork[22m: [36mhttp://172.26.208.1:[1m80[22m/[39m
 [2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+[2m10:42:24[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m10:42:43[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m10:42:46[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m10:43:37[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m10:43:44[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m10:44:51[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m10:45:01[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m10:45:23[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m10:45:55[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m10:46:03[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m10:47:30[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/contexts/theme.tsx, /src/index.css[22m
+[2m10:47:30[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/contexts/theme.tsx[22m Could not Fast Refresh ("useTheme" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m10:47:30[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/index.css, /src/components/Layout.tsx[22m
+[2m10:47:52[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/contexts/theme.tsx, /src/index.css[22m
+[2m10:47:52[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/contexts/theme.tsx[22m Could not Fast Refresh ("useTheme" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m10:47:52[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/index.css, /src/components/Layout.tsx[22m
+[2m10:48:27[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m10:56:26[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m10:56:27[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m10:57:15[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m10:57:28[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m10:58:02[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m11:00:29[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/contexts/theme.tsx, /src/index.css[22m
+[2m11:00:29[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/contexts/theme.tsx[22m Could not Fast Refresh ("useTheme" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m11:00:29[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/index.css, /src/components/Layout.tsx[22m
+[2m11:00:39[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/contexts/theme.tsx, /src/index.css[22m
+[2m11:00:39[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/contexts/theme.tsx[22m Could not Fast Refresh ("useTheme" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m11:00:39[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/index.css, /src/components/Layout.tsx[22m
+[2m11:00:54[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/contexts/theme.tsx, /src/index.css[22m
+[2m11:00:54[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/contexts/theme.tsx[22m Could not Fast Refresh ("useTheme" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m11:00:54[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/index.css, /src/components/Layout.tsx[22m
+[2m11:01:33[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m11:01:55[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m11:02:02[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m11:02:12[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m11:03:19[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m11:04:41[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m11:04:48[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m11:07:18[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m11:07:38[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m11:09:00[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m11:10:28[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m11:10:34[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m11:11:36[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m11:11:46[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m11:11:51[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m11:11:54[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m11:13:17[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m11:14:36[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m11:15:34[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m11:15:42[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m11:15:51[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m11:17:16[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m11:18:13[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m11:18:33[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m11:18:38[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m11:19:11[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m11:19:46[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m12:25:48[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m12:25:51[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m12:25:54[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m12:25:58[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m12:26:37[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m12:27:44[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Boxes.tsx, /src/index.css[22m
+[2m12:27:54[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Boxes.tsx, /src/index.css[22m
+[2m12:28:16[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Boxes.tsx, /src/index.css[22m
+[2m12:28:26[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Boxes.tsx, /src/index.css[22m
+[2m12:28:33[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Boxes.tsx, /src/index.css[22m
+[2m12:29:40[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Boxes.tsx, /src/index.css[22m
+[2m12:31:07[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Boxes.tsx, /src/index.css[22m
+[2m12:31:11[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Boxes.tsx, /src/index.css[22m
+[2m12:31:28[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Boxes.tsx, /src/index.css[22m
+[2m12:31:40[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Boxes.tsx, /src/index.css[22m
+[2m12:31:52[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Boxes.tsx, /src/index.css[22m
+[2m12:33:05[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Printers.tsx, /src/index.css[22m
+[2m12:33:17[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Printers.tsx, /src/index.css[22m
+[2m12:34:01[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Printers.tsx, /src/index.css[22m
+[2m12:34:06[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Printers.tsx, /src/index.css[22m
+[2m12:34:14[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Printers.tsx, /src/index.css[22m
+[2m12:34:20[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Printers.tsx, /src/index.css[22m
+[2m12:34:25[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Printers.tsx, /src/index.css[22m
+[2m12:34:30[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Printers.tsx, /src/index.css[22m
+[2m12:34:36[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Printers.tsx, /src/index.css[22m
+[2m12:35:03[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Printers.tsx, /src/index.css[22m
+[2m12:35:07[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Printers.tsx, /src/index.css[22m
+[2m12:35:10[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Printers.tsx, /src/index.css[22m
+[2m12:35:27[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Printers.tsx, /src/index.css[22m
+[2m12:35:38[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Printers.tsx, /src/index.css[22m
+[2m12:35:43[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Printers.tsx, /src/index.css[22m
+[2m12:35:49[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Printers.tsx, /src/index.css[22m
+[2m12:35:59[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Printers.tsx, /src/index.css[22m
+[2m12:36:18[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Printers.tsx, /src/index.css[22m
+[2m12:36:28[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Printers.tsx, /src/index.css[22m
+[2m12:36:30[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Printers.tsx, /src/index.css[22m
+[2m12:36:37[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Printers.tsx, /src/index.css[22m
+[2m12:36:47[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Printers.tsx, /src/index.css[22m
+[2m12:36:58[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Printers.tsx, /src/index.css[22m
+[2m12:37:05[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Printers.tsx, /src/index.css[22m
+[2m12:37:25[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Printers.tsx, /src/index.css[22m
+[2m12:37:34[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Printers.tsx, /src/index.css[22m
+[2m12:39:20[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m12:39:53[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Printers.tsx, /src/index.css[22m
+[2m12:40:09[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Printers.tsx, /src/index.css[22m
+[2m12:40:43[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Printers.tsx, /src/index.css[22m
+[2m12:41:39[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m12:42:16[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m12:42:36[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m12:42:41[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m12:42:50[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m12:42:52[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m12:42:59[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m12:43:16[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m12:43:18[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m12:44:17[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m12:44:23[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m12:44:27[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m12:44:51[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m12:45:17[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m12:45:35[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m12:45:55[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m12:46:04[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m12:47:24[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m12:47:50[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m12:48:22[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m12:48:38[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m12:48:43[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m12:48:48[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m12:51:26[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m12:52:37[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m12:52:38[22m [36m[1m[vite][22m[39m [32m✨ new dependencies optimized: [33mreact-qrcode-logo[32m[39m
+[2m12:52:38[22m [36m[1m[vite][22m[39m [32m✨ optimized dependencies changed. reloading[39m
+[2m12:52:53[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m12:54:12[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:11:05[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:11:28[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:11:33[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:12:03[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:12:19[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:12:28[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:13:20[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:13:43[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:13:50[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:14:03[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:14:05[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:15:18[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:15:24[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:15:44[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:15:54[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:16:10[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:21:59[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:22:04[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:22:07[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:22:34[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:23:00[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:23:23[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:23:26[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:23:28[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:35:54[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:35:55[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\Jorge\Documents\project\src\pages\Routers.tsx: Unterminated string constant. (196:243)
+
+[0m [90m 194 |[31m             [33m<[31m[33mbutton[31m
+ [90m 195 |[31m               onClick[33m=[31m{closeQrCodeModal}
+[31m[1m>[22m[31m[90m 196 |[31m               className[33m=[31m[32m"mt-4 w-full inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-2xl bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"[31m
+ [90m     |[31m                                                                                                                                                                                                                                                    [31m[1m^[22m[31m
+ [90m 197 |[31m             [33m>[31m
+ [90m 198 |[31m               [33mFechar[31m
+ [90m 199 |[31m             [33m<[31m[33m/[31m[33mbutton[31m[33m>[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/Jorge/Documents/project/src/pages/Routers.tsx[39m:196:243
+[33m  194|              <button
+  195|                onClick={closeQrCodeModal}
+  196|                className="mt-4 w-full inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-2xl bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+     |                                                                                                                                                                                                                                                     ^
+  197|              >
+  198|                Fechar[39m
+      at constructor (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:362:19)
+      at TypeScriptParserMixin.raise (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:3259:19)
+      at TypeScriptParserMixin.jsxReadString (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:6550:20)
+      at TypeScriptParserMixin.getTokenFromCode (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:6835:14)
+      at TypeScriptParserMixin.getTokenFromCode (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:9634:11)
+      at TypeScriptParserMixin.nextToken (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:2443:10)
+      at TypeScriptParserMixin.next (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:2356:10)
+      at TypeScriptParserMixin.jsxParseIdentifier (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:6618:10)
+      at TypeScriptParserMixin.jsxParseNamespacedName (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:6627:22)
+      at TypeScriptParserMixin.jsxParseAttribute (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:6699:22)
+      at TypeScriptParserMixin.jsxParseOpeningElementAfterName (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:6714:28)
+      at TypeScriptParserMixin.jsxParseOpeningElementAfterName (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:9690:18)
+      at TypeScriptParserMixin.jsxParseOpeningElementAt (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:6709:17)
+      at TypeScriptParserMixin.jsxParseElementAt (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:6733:33)
+      at TypeScriptParserMixin.jsxParseElementAt (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:6745:32)
+      at TypeScriptParserMixin.jsxParseElementAt (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:6745:32)
+      at TypeScriptParserMixin.jsxParseElement (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:6796:17)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:6806:19)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10591:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10576:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10556:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:9483:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10410:61)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10415:23)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10392:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10355:21)
+      at C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:9421:39
+      at TypeScriptParserMixin.tryParse (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:3597:20)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:9421:18)
+      at C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10325:39
+      at TypeScriptParserMixin.allowInAnd (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:11937:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10325:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:11196:28)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10849:23)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:6811:20)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10591:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10576:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10556:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:9483:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10410:61)
+      at TypeScriptParserMixin.parseExprOpBaseRightExpr (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10496:34)
+      at TypeScriptParserMixin.parseExprOpRightExpr (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10491:21)
+      at TypeScriptParserMixin.parseExprOp (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10458:27)
+      at TypeScriptParserMixin.parseExprOp (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:9026:18)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10419:17)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10392:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10355:21)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:9432:20)
+      at TypeScriptParserMixin.parseExpressionBase (C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10309:23)
+      at C:\Users\Jorge\Documents\project\node_modules\@babel\parser\lib\index.js:10305:39
+[2m13:36:05[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:36:23[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:36:26[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:36:30[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:36:35[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:36:49[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:37:25[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:37:42[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:38:22[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:38:25[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:38:28[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:38:36[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:39:33[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:40:34[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:41:02[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:41:06[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:41:08[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:41:09[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:41:16[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:42:37[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mtailwind.config.js[22m
+[2m13:43:12[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mtailwind.config.js[22m
+[2m13:43:38[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mtailwind.config.js[22m
+[2m13:44:08[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:44:13[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:45:00[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2mtailwind.config.js[22m
+[2m13:47:51[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:49:12[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:49:22[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m
+[2m13:49:52[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/sheet.tsx, /src/index.css[22m
+[2m13:50:01[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/sheet.tsx, /src/index.css[22m
+[2m13:50:12[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/sheet.tsx, /src/index.css[22m
+[2m13:50:28[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/sheet.tsx, /src/index.css[22m
+[2m13:50:34[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/sheet.tsx, /src/index.css[22m
+[2m13:50:37[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/sheet.tsx, /src/index.css[22m
+[2m13:51:01[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/sheet.tsx, /src/index.css[22m
+[2m13:52:08[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m13:52:20[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m13:52:37[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m13:52:41[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m13:52:50[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m13:52:54[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m13:52:57[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m13:53:07[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m13:53:12[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m13:53:27[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m13:53:32[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m13:53:35[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m13:53:52[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m13:54:02[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m13:54:03[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m13:54:20[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m13:55:11[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m13:58:58[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m16:27:12[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m16:27:26[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m16:28:11[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m16:28:32[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m16:28:39[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m16:30:40[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m16:31:41[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m16:35:14[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m16:36:20[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m16:38:37[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m16:41:26[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m16:41:56[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/components/PopUp.tsx[22m
+[2m16:42:08[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/components/PopUp.tsx[22m
+[2m16:42:39[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m16:42:47[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m16:45:00[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/PopUp.tsx, /src/index.css[22m
+[2m16:45:06[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/PopUp.tsx, /src/index.css[22m
+[2m16:45:45[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/PopUp.tsx, /src/index.css[22m
+[2m16:46:26[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/PopUp.tsx, /src/index.css[22m
+[2m16:54:02[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/PopUp.tsx, /src/index.css[22m
+[2m16:54:02[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/components/PopUp.tsx[22m Could not Fast Refresh (export removed)
+[2m16:54:02[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/Layout.tsx[22m
+[2m16:55:01[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m16:55:19[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m16:55:30[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m16:55:38[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m16:57:52[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/PopUp.tsx, /src/index.css[22m
+[2m16:57:52[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/components/PopUp.tsx[22m Could not Fast Refresh (new export)
+[2m16:57:52[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/Layout.tsx[22m
+[2m16:58:02[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/PopUp.tsx, /src/index.css[22m
+[2m16:58:02[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/components/PopUp.tsx[22m Could not Fast Refresh (new export)
+[2m16:58:02[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/Layout.tsx[22m
+[2m16:58:15[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/PopUp.tsx, /src/index.css[22m
+[2m16:58:15[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/components/PopUp.tsx[22m Could not Fast Refresh (export removed)
+[2m16:58:15[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/Layout.tsx[22m
+[2m16:58:23[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m16:58:34[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Layout.tsx, /src/index.css[22m
+[2m16:59:53[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m17:00:05[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m17:00:11[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m17:00:17[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m17:00:18[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m17:00:21[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m17:00:26[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m17:00:49[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m17:02:04[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m17:02:10[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m17:03:05[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m17:03:11[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m17:03:22[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m17:03:29[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m17:03:40[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m17:03:55[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Devices.tsx, /src/index.css[22m
+[2m17:06:40[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Boxes.tsx, /src/index.css[22m
+[2m17:08:20[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Printers.tsx, /src/index.css[22m
+[2m17:10:11[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Routers.tsx, /src/index.css[22m

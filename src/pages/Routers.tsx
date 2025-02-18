@@ -7,8 +7,7 @@ import {
   EyeOff, 
   Wifi, 
   Signal, 
-  User, 
-  Lock,
+  User,
   QrCode
 } from 'lucide-react';
 import { useAuthStore } from '../store/auth';
